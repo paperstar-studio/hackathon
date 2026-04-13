@@ -1,0 +1,24 @@
+name: Abels re push
+
+
+on:
+  schedule:
+    - cron: "0 */23 * * *"
+
+
+permissions:
+  contents: write
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Create report file0
+        run: date +%s > report.txt
+      - name: Commit report
+        run: |
+          git config --global user.name 'Abel'
+          git config --global user.email 'abel.moricz.2@gmail.com'
+          git add .
+          git commit -am "Automated report"
+          git push
