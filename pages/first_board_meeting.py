@@ -24,4 +24,8 @@ st.markdown("""
 	* what are you going to mitigate regulatory body risk > don't spend all your money on lawyers
 
 
+example ideas
+	pet ideas
+
+
 	""")
