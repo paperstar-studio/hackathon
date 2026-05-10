@@ -2,7 +2,8 @@ import sys
 import streamlit as st
 
 st.set_page_config(layout='wide')
-st.title("Hackathon 2025")
+st.title("Hackathon 2026")
+st.markdown("by ___")
 st.code("Emma Kludze\nFabian Holl\nAbel Moricz")
 
 st.markdown("""### background 
